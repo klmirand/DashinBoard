@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NekoPlay</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id = "Titulo">NekoPlay | Anime Dashboard</h1>
+
+    </header>
+
+    <main>
+        <section id = "Filtros">
+        <form>
+
+           <select id="FiltroTipo">
+
+              <option>Todos</option>
+              <option>Favoritos</option>
+              <option>Romance</option>
+              <option>Ação</option>
+              <option>Shounen</option>
+
+            </select>
+
+         </form>
+
+        <div class = "check">
+        <input type="checkbox" id = "Assistindo"> <label for="Assistindo">Assistindo</label>
+        <input type="checkbox" id = "Completo"> <label for="Completo">Completo</label>
+        <input type="checkbox" id = "AssistirDepois"> <label for="AssistirDepois">Assistir Depois</label>
+        </div>
+
+        <button id = "Filtrar">Filtrar</button>
+
+        </section>
+
+        <button id = "NovoAnime">+ Novo Anime</button>
+       
+   </main>
+   <!--TODOS , FAVORITOS , ULTIMO ADICIONADO -->
+
+        <section id = "Topicos">
+            <div class = "card">
+
+                <h2>Todos os Animes</h2>
+                <h3 id = "TotalAnimes">3</h3>
+
+            </div>
+
+            <div class = "card">
+
+                <h2>Favoritos</h2>
+                <h3 id = "TotalFavoritos">0</h3>
+
+            </div>
+
+            <div class = "card">
+
+                <h2>Último Adicionado</h2>
+                <h3 id = "UltimoAnime">Naruto</h3>
+
+            </div>
+        </section>
+
+   <!--LISTA DOS ANIMES -->
+
+        <section id = "listaAnimes">
+
+        </section>
+
+        
+   <!-- MODAL -->
+
+   <div id = "Modal">
+
+    <div class = "ModalConteudo">
+
+        <span id = "FecharModal">X</span>
+
+            <h2 id="TituloModal">Novo Anime</h2>
+
+        <input type="text" id = "NomeAnime" placeholder="Nome do Anime">
+
+        <select id="TipoAnime">
+            <option value="Shounen">Shounen</option>
+            <option value="Romance">Romance</option>
+            <option value="Ação">Ação</option>
+        </select>
+
+        <select id="StatusAnime">
+            <option value="Assistindo">Assistindo</option>
+            <option value="Completo">Completo</option>
+            <option value="Assistir Depois">Assistir Depois</option>
+        </select>
+
+        <button id = "AdicionarAnime"> Adicionar </button>
+
+    </div>
+
+    </div>
+
+    <div id="ModalExcluir">
+
+    <div class="conteudoExcluir">
+
+        <h2>Tem certeza que deseja excluir?</h2>
+
+        <div class="botoesExcluir">
+
+            <button id="CancelarExcluir">Cancelar</button>
+
+            <button id="ConfirmarExcluir">Excluir</button>
+
+        </div>
+
+     </div>
+
+    </div>
+
+
+   
+
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+
+header {
+
+    margin: 40px auto;
+    width:80%;
+
+    padding: 40px;
+
+    border: 3px solid white;
+    border-radius: 20px;
+
+    background-color: rgb(98, 49, 145);
+}
+
+body {
+    background-image: linear-gradient(
+        rgb(27, 27, 66),
+        rgb(42, 42, 68)
+    );
+
+    height: 150vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Titulo {
+    color: white;
+}
+
+#NovoAnime {
+    background-color:rgb(163, 87, 235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+/* Filtros */
+
+.check {
+    color: white;
+    font-size: larger;
+
+}
+
+#Filtros {
+    background-color: rgb(98, 49, 145);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-around;
+    
+}
+
+select {
+    height: 5vh;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    cursor:pointer;
+    font-size: large;
+}
+
+
+#Filtrar {
+    background-color:rgb(163, 87, 235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Topicos */
+
+#Topicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 15px;
+    gap:20px;
+    margin-top: 40px;
+    
+}
+
+.card h2 {
+    color: rgb(98, 49, 145);
+}
+    
+
+#listaAnimes {
+    color:black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 40px;
+    background-color: white;
+}
+
+#listaAnimes h2 {
+    color: rgb(98, 49, 145);
+}
+
+/* MODAL */
+
+#Modal {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.ModalConteudo {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    width: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    position: relative;
+}
+
+.ModalConteudo input {
+
+    height: 40px;
+
+    padding-left: 10px;
+}
+
+.ModalConteudo button {
+
+    background-color: rgb(163, 87, 235);
+
+    color: white;
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#FecharModal {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+/* MODAL EXCLUIR */
+
+#ModalExcluir {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.conteudoExcluir {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    width: 350px;
+
+    text-align: center;
+}
+
+.botoesExcluir {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 20px;
+}
+
+#CancelarExcluir {
+
+    background-color: gray;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#ConfirmarExcluir {
+
+    background-color: red;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+} 
