@@ -155,8 +155,8 @@ function atualizarDashboard() {
     totalFavoritos.innerHTML = favoritos.length
 
     ultimoAnime.innerHTML =
+            animes.length > 0 ? animes[animes.length - 1].nome : "Nenhum"
 
-        animes[animes.length - 1].nome
 
 }
 
